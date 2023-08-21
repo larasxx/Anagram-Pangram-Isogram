@@ -1,0 +1,10 @@
+C:\Users\skpav\source\repos\WindowsFormsAppForAnagrams\obj\Debug\WindowsFormsAppForAnagrams.csproj.AssemblyReference.cache
+C:\Users\skpav\source\repos\WindowsFormsAppForAnagrams\obj\Debug\WindowsFormsAppForAnagrams.Form1.resources
+C:\Users\skpav\source\repos\WindowsFormsAppForAnagrams\obj\Debug\WindowsFormsAppForAnagrams.Properties.Resources.resources
+C:\Users\skpav\source\repos\WindowsFormsAppForAnagrams\obj\Debug\WindowsFormsAppForAnagrams.csproj.GenerateResource.cache
+C:\Users\skpav\source\repos\WindowsFormsAppForAnagrams\obj\Debug\WindowsFormsAppForAnagrams.csproj.CoreCompileInputs.cache
+C:\Users\skpav\source\repos\WindowsFormsAppForAnagrams\bin\Debug\WindowsFormsAppForAnagrams.exe.config
+C:\Users\skpav\source\repos\WindowsFormsAppForAnagrams\bin\Debug\WindowsFormsAppForAnagrams.exe
+C:\Users\skpav\source\repos\WindowsFormsAppForAnagrams\bin\Debug\WindowsFormsAppForAnagrams.pdb
+C:\Users\skpav\source\repos\WindowsFormsAppForAnagrams\obj\Debug\WindowsFormsAppForAnagrams.exe
+C:\Users\skpav\source\repos\WindowsFormsAppForAnagrams\obj\Debug\WindowsFormsAppForAnagrams.pdb
