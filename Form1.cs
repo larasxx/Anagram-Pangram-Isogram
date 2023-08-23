@@ -48,6 +48,13 @@ namespace WindowsFormsAppForAnagrams
             txtOutput.Text = $"Acronym: {acronym}";
         }
 
+        private void ReverseString_Click(object sender, EventArgs e)
+        {
+            string inputWord = txtInputWord.Text;
+            string revStr = ReversedString.Reverse(inputWord);
+            txtOutput.Text = $"ReversedString: {revStr}";
+        }
+
         private void buttonGoToForm2_Click(object sender, EventArgs e)
         {
             panel2.Visible = false;
@@ -87,6 +94,6 @@ namespace WindowsFormsAppForAnagrams
             richTextBoxOutput.Text = output.ToString();
         }
 
-        
+       
     }
 }
