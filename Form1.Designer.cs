@@ -36,12 +36,13 @@
             this.txtOutput = new System.Windows.Forms.RichTextBox();
             this.buttonGoToForm2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.PreviousPageBtn = new System.Windows.Forms.Button();
-            this.UnicodeConvertion = new System.Windows.Forms.Button();
-            this.richTextBoxOutput = new System.Windows.Forms.RichTextBox();
-            this.textBoxInput = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.textBoxInput = new System.Windows.Forms.TextBox();
+            this.richTextBoxOutput = new System.Windows.Forms.RichTextBox();
+            this.UnicodeConvertion = new System.Windows.Forms.Button();
+            this.PreviousPageBtn = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.GnrtAcronym = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -124,8 +125,53 @@
             this.panel1.TabIndex = 7;
             this.panel1.Visible = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(248, 81);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(100, 13);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "UnicodeConversion";
+            // 
+            // textBoxInput
+            // 
+            this.textBoxInput.Location = new System.Drawing.Point(251, 108);
+            this.textBoxInput.Name = "textBoxInput";
+            this.textBoxInput.Size = new System.Drawing.Size(93, 20);
+            this.textBoxInput.TabIndex = 13;
+            // 
+            // richTextBoxOutput
+            // 
+            this.richTextBoxOutput.Location = new System.Drawing.Point(251, 163);
+            this.richTextBoxOutput.Name = "richTextBoxOutput";
+            this.richTextBoxOutput.Size = new System.Drawing.Size(75, 45);
+            this.richTextBoxOutput.TabIndex = 12;
+            this.richTextBoxOutput.Text = "";
+            // 
+            // UnicodeConvertion
+            // 
+            this.UnicodeConvertion.Location = new System.Drawing.Point(251, 134);
+            this.UnicodeConvertion.Name = "UnicodeConvertion";
+            this.UnicodeConvertion.Size = new System.Drawing.Size(75, 23);
+            this.UnicodeConvertion.TabIndex = 11;
+            this.UnicodeConvertion.Text = "Convert";
+            this.UnicodeConvertion.UseVisualStyleBackColor = true;
+            this.UnicodeConvertion.Click += new System.EventHandler(this.UnicodeConvertion_Click);
+            // 
+            // PreviousPageBtn
+            // 
+            this.PreviousPageBtn.Location = new System.Drawing.Point(3, 12);
+            this.PreviousPageBtn.Name = "PreviousPageBtn";
+            this.PreviousPageBtn.Size = new System.Drawing.Size(85, 23);
+            this.PreviousPageBtn.TabIndex = 10;
+            this.PreviousPageBtn.Text = "PreviousPage";
+            this.PreviousPageBtn.UseVisualStyleBackColor = true;
+            this.PreviousPageBtn.Click += new System.EventHandler(this.PreviousPageBtn_Click);
+            // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.GnrtAcronym);
             this.panel2.Controls.Add(this.lblInput);
             this.panel2.Controls.Add(this.txtInputWord);
             this.panel2.Controls.Add(this.buttonGoToForm2);
@@ -139,49 +185,15 @@
             this.panel2.Size = new System.Drawing.Size(800, 450);
             this.panel2.TabIndex = 8;
             // 
-            // PreviousPageBtn
+            // GnrtAcronym
             // 
-            this.PreviousPageBtn.Location = new System.Drawing.Point(3, 12);
-            this.PreviousPageBtn.Name = "PreviousPageBtn";
-            this.PreviousPageBtn.Size = new System.Drawing.Size(85, 23);
-            this.PreviousPageBtn.TabIndex = 10;
-            this.PreviousPageBtn.Text = "PreviousPage";
-            this.PreviousPageBtn.UseVisualStyleBackColor = true;
-            this.PreviousPageBtn.Click += new System.EventHandler(this.PreviousPageBtn_Click);
-            // 
-            // UnicodeConvertion
-            // 
-            this.UnicodeConvertion.Location = new System.Drawing.Point(251, 134);
-            this.UnicodeConvertion.Name = "UnicodeConvertion";
-            this.UnicodeConvertion.Size = new System.Drawing.Size(75, 23);
-            this.UnicodeConvertion.TabIndex = 11;
-            this.UnicodeConvertion.Text = "Convert";
-            this.UnicodeConvertion.UseVisualStyleBackColor = true;
-            this.UnicodeConvertion.Click += new System.EventHandler(this.UnicodeConvertion_Click);
-            // 
-            // richTextBoxOutput
-            // 
-            this.richTextBoxOutput.Location = new System.Drawing.Point(251, 163);
-            this.richTextBoxOutput.Name = "richTextBoxOutput";
-            this.richTextBoxOutput.Size = new System.Drawing.Size(75, 45);
-            this.richTextBoxOutput.TabIndex = 12;
-            this.richTextBoxOutput.Text = "";
-            // 
-            // textBoxInput
-            // 
-            this.textBoxInput.Location = new System.Drawing.Point(251, 108);
-            this.textBoxInput.Name = "textBoxInput";
-            this.textBoxInput.Size = new System.Drawing.Size(93, 20);
-            this.textBoxInput.TabIndex = 13;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(248, 81);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 13);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "UnicodeConversion";
+            this.GnrtAcronym.Location = new System.Drawing.Point(205, 65);
+            this.GnrtAcronym.Name = "GnrtAcronym";
+            this.GnrtAcronym.Size = new System.Drawing.Size(75, 23);
+            this.GnrtAcronym.TabIndex = 7;
+            this.GnrtAcronym.Text = "Acronym";
+            this.GnrtAcronym.UseVisualStyleBackColor = true;
+            this.GnrtAcronym.Click += new System.EventHandler(this.GnrtAcronym_Click);
             // 
             // Form1
             // 
@@ -216,6 +228,7 @@
         private System.Windows.Forms.TextBox textBoxInput;
         private System.Windows.Forms.RichTextBox richTextBoxOutput;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button GnrtAcronym;
     }
 }
 

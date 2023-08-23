@@ -41,6 +41,13 @@ namespace WindowsFormsAppForAnagrams
             txtOutput.Text = $"Pangram: {isPangram}";
         }
 
+        private void GnrtAcronym_Click(object sender, EventArgs e)
+        {
+            string inputWord = txtInputWord.Text;
+            string acronym = Acronym.Abbreviate(inputWord);
+            txtOutput.Text = $"Acronym: {acronym}";
+        }
+
         private void buttonGoToForm2_Click(object sender, EventArgs e)
         {
             panel2.Visible = false;
@@ -79,5 +86,7 @@ namespace WindowsFormsAppForAnagrams
 
             richTextBoxOutput.Text = output.ToString();
         }
+
+        
     }
 }

@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Analyzers\Acronym.cs" />
     <Compile Include="Analyzers\AnagramGenerator.cs" />
     <Compile Include="Analyzers\Isogram.cs" />
     <Compile Include="Analyzers\Pangram.cs" />
